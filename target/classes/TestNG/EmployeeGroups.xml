@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test_suite">
+    <test name="Group A">
+        <groups>
+            <run>
+                <include name="Group A"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNG.GroupsEmployee"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Group B">
+        <groups>
+            <run>
+                <include name="Group B"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNG.GroupsEmployee"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
