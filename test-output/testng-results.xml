@@ -1,29 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="7943" started-at="2020-05-05T18:53:01 IST" finished-at="2020-05-05T18:53:09 IST">
+  <suite name="Default Suite" duration-ms="5925" started-at="2020-05-08T17:35:12 IST" finished-at="2020-05-08T17:35:18 IST">
     <groups>
+      <group name="Include Group">
+        <method signature="EmployeeTest.validateDeleteEmployee()[pri:3, instance:com.nisum.poc.TestNG.EmployeeTest@66a3ffec]" name="validateDeleteEmployee" class="com.nisum.poc.TestNG.EmployeeTest"/>
+        <method signature="EmployeeTest.validatecreateEmployee()[pri:1, instance:com.nisum.poc.TestNG.EmployeeTest@66a3ffec]" name="validatecreateEmployee" class="com.nisum.poc.TestNG.EmployeeTest"/>
+        <method signature="EmployeeTest.validateupdateteEmployee()[pri:2, instance:com.nisum.poc.TestNG.EmployeeTest@66a3ffec]" name="validateupdateteEmployee" class="com.nisum.poc.TestNG.EmployeeTest"/>
+      </group> <!-- Include Group -->
     </groups>
-    <test name="NisumPOC" duration-ms="7943" started-at="2020-05-05T18:53:01 IST" finished-at="2020-05-05T18:53:09 IST">
-      <class name="com.nisum.poc.Employee.IncludeExcludeEmployee">
-        <test-method status="PASS" signature="createEmployee()[pri:0, instance:com.nisum.poc.Employee.IncludeExcludeEmployee@31a5c39e]" name="createEmployee" duration-ms="5277" started-at="2020-05-05T18:53:02 IST" finished-at="2020-05-05T18:53:07 IST">
+    <test name="NisumPOC" duration-ms="5925" started-at="2020-05-08T17:35:12 IST" finished-at="2020-05-08T17:35:18 IST">
+      <class name="com.nisum.poc.TestNG.EmployeeTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.nisum.poc.TestNG.EmployeeTest@66a3ffec]" name="setUp" is-config="true" duration-ms="608" started-at="2020-05-08T17:35:12 IST" description="Initializes URI" finished-at="2020-05-08T17:35:12 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createEmployee -->
-        <test-method status="PASS" signature="deleteEmployee()[pri:0, instance:com.nisum.poc.Employee.IncludeExcludeEmployee@31a5c39e]" name="deleteEmployee" duration-ms="851" started-at="2020-05-05T18:53:07 IST" finished-at="2020-05-05T18:53:08 IST">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validatecreateEmployee()[pri:1, instance:com.nisum.poc.TestNG.EmployeeTest@66a3ffec]" name="validatecreateEmployee" duration-ms="3347" started-at="2020-05-08T17:35:12 IST" description="This method is used for validation of creating employee details " finished-at="2020-05-08T17:35:16 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteEmployee -->
-        <test-method status="PASS" signature="retriveEmployee()[pri:0, instance:com.nisum.poc.Employee.IncludeExcludeEmployee@31a5c39e]" name="retriveEmployee" duration-ms="699" started-at="2020-05-05T18:53:08 IST" finished-at="2020-05-05T18:53:08 IST">
+        </test-method> <!-- validatecreateEmployee -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.nisum.poc.TestNG.EmployeeTest@66a3ffec]" name="setUp" is-config="true" duration-ms="1" started-at="2020-05-08T17:35:16 IST" description="Initializes URI" finished-at="2020-05-08T17:35:16 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- retriveEmployee -->
-        <test-method status="PASS" signature="updateEmployee()[pri:0, instance:com.nisum.poc.Employee.IncludeExcludeEmployee@31a5c39e]" name="updateEmployee" duration-ms="1056" started-at="2020-05-05T18:53:08 IST" finished-at="2020-05-05T18:53:09 IST">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateupdateteEmployee()[pri:2, instance:com.nisum.poc.TestNG.EmployeeTest@66a3ffec]" name="validateupdateteEmployee" duration-ms="888" started-at="2020-05-08T17:35:16 IST" description="This method is used for validation of updating employee details " finished-at="2020-05-08T17:35:17 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateEmployee -->
-      </class> <!-- com.nisum.poc.Employee.IncludeExcludeEmployee -->
+        </test-method> <!-- validateupdateteEmployee -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.nisum.poc.TestNG.EmployeeTest@66a3ffec]" name="setUp" is-config="true" duration-ms="2" started-at="2020-05-08T17:35:17 IST" description="Initializes URI" finished-at="2020-05-08T17:35:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateDeleteEmployee()[pri:3, instance:com.nisum.poc.TestNG.EmployeeTest@66a3ffec]" name="validateDeleteEmployee" duration-ms="1022" started-at="2020-05-08T17:35:17 IST" description="This method is used for validation of deleting employee details " finished-at="2020-05-08T17:35:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDeleteEmployee -->
+      </class> <!-- com.nisum.poc.TestNG.EmployeeTest -->
     </test> <!-- NisumPOC -->
   </suite> <!-- Default Suite -->
 </testng-results>

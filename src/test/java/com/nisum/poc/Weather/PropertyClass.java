@@ -10,7 +10,7 @@ public class PropertyClass {
 
     public static Properties loader_properties() throws IOException {
 
-        File file = new File("src/com.nisum.poc/resources/Configurations/configuration.properties");
+        File file = new File("src/test/resources/configurations/configuration.properties");
         InputStream fileInput = null;
 
         fileInput = new FileInputStream(file);

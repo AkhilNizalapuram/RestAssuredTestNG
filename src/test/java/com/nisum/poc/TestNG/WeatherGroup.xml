@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test_suite">
+    <test name="Include and Exclude Group">
+        <groups>
+            <run>
+                <include name="Include Groups"/>
+                <exclude name="Exclude Groups"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.nisum.poc.TestNG.WeatherTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

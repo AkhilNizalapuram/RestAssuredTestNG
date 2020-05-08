@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="NisumPOC Test Suite" verbose="1" >
+    <test name="Method Test Cases" >
+        <classes>
+            <class name="com.nisum.poc.TestNG.EmployeeTest">
+                <methods>
+                    <include name="validatecreateEmployee" />
+                    <exclude name="validateupdateteEmployee" />
+                    <include name="validateDeleteEmployee" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

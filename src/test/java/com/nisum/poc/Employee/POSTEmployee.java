@@ -30,10 +30,7 @@ public class POSTEmployee {
                 .post("/create");
         Assert.assertEquals("Did not get response", 200, response.getStatusCode());
 
-
-        int statusCode = response.getStatusCode();
         Headers allHeaders = response.headers();
-        String statusLine = response.getStatusLine();
         ResponseBody body = response.getBody();
         String bodyAsString = body.asString();
 

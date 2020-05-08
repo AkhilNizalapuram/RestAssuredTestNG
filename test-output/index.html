@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_Suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +102,17 @@
                     <div class="method-list-content passed suite-Default_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="com.nisum.poc.Employee.IncludeExcludeEmployee" hash-for-method="createEmployee">createEmployee</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="com.nisum.poc.TestNG.EmployeeTest" hash-for-method="validateDeleteEmployee">validateDeleteEmployee</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="com.nisum.poc.Employee.IncludeExcludeEmployee" hash-for-method="deleteEmployee">deleteEmployee</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="com.nisum.poc.TestNG.EmployeeTest" hash-for-method="validatecreateEmployee">validatecreateEmployee</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="com.nisum.poc.Employee.IncludeExcludeEmployee" hash-for-method="retriveEmployee">retriveEmployee</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="com.nisum.poc.Employee.IncludeExcludeEmployee" hash-for-method="updateEmployee">updateEmployee</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="com.nisum.poc.TestNG.EmployeeTest" hash-for-method="validateupdateteEmployee">validateupdateteEmployee</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_Suite -->
@@ -135,35 +130,34 @@
           <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.nisum.poc.Employee.IncludeExcludeEmployee</span>
+              <span class="class-name">com.nisum.poc.TestNG.EmployeeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createEmployee">
-                  </a> <!-- createEmployee -->
-                  <span class="method-name">createEmployee</span>
+                  <a name="validateDeleteEmployee">
+                  </a> <!-- validateDeleteEmployee -->
+                  <span class="method-name">validateDeleteEmployee</span>
+                  <em>
+(This method is used for validation of deleting employee details )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="deleteEmployee">
-                  </a> <!-- deleteEmployee -->
-                  <span class="method-name">deleteEmployee</span>
+                  <a name="validatecreateEmployee">
+                  </a> <!-- validatecreateEmployee -->
+                  <span class="method-name">validatecreateEmployee</span>
+                  <em>
+(This method is used for validation of creating employee details )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="retriveEmployee">
-                  </a> <!-- retriveEmployee -->
-                  <span class="method-name">retriveEmployee</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="updateEmployee">
-                  </a> <!-- updateEmployee -->
-                  <span class="method-name">updateEmployee</span>
+                  <a name="validateupdateteEmployee">
+                  </a> <!-- validateupdateteEmployee -->
+                  <span class="method-name">validateupdateteEmployee</span>
+                  <em>
+(This method is used for validation of updating employee details )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,7 +174,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;NisumPOC&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.nisum.poc.Employee.IncludeExcludeEmployee&quot;/&gt;
+      &lt;class name=&quot;com.nisum.poc.TestNG.EmployeeTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- NisumPOC --&gt;
 &lt;/suite&gt; &lt;!-- Default Suite --&gt;
@@ -204,6 +198,22 @@
             <span class="header-content">Groups for Default Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Include Group</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateDeleteEmployee</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validatecreateEmployee</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateupdateteEmployee</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_Suite" class="panel">
@@ -213,35 +223,31 @@
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-                  suiteTableInitFunctions.push('tableData_Default_Suite');
-                  function tableData_Default_Suite() {
-                  var data = new google.visualization.DataTable();
-                  data.addColumn('number', 'Number');
-                  data.addColumn('string', 'Method');
-                  data.addColumn('string', 'Class');
-                  data.addColumn('number', 'Time (ms)');
-                  data.addRows(4);
-                  data.setCell(0, 0, 0)
-                  data.setCell(0, 1, 'createEmployee')
-                  data.setCell(0, 2, 'com.nisum.poc.Employee.IncludeExcludeEmployee')
-                  data.setCell(0, 3, 5277);
-                  data.setCell(1, 0, 1)
-                  data.setCell(1, 1, 'updateEmployee')
-                  data.setCell(1, 2, 'com.nisum.poc.Employee.IncludeExcludeEmployee')
-                  data.setCell(1, 3, 1056);
-                  data.setCell(2, 0, 2)
-                  data.setCell(2, 1, 'deleteEmployee')
-                  data.setCell(2, 2, 'com.nisum.poc.Employee.IncludeExcludeEmployee')
-                  data.setCell(2, 3, 851);
-                  data.setCell(3, 0, 3)
-                  data.setCell(3, 1, 'retriveEmployee')
-                  data.setCell(3, 2, 'com.nisum.poc.Employee.IncludeExcludeEmployee')
-                  data.setCell(3, 3, 699);
-                  window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
-                  return data;
-                  }
+suiteTableInitFunctions.push('tableData_Default_Suite');
+function tableData_Default_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validatecreateEmployee')
+data.setCell(0, 2, 'com.nisum.poc.TestNG.EmployeeTest')
+data.setCell(0, 3, 3347);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateDeleteEmployee')
+data.setCell(1, 2, 'com.nisum.poc.TestNG.EmployeeTest')
+data.setCell(1, 3, 1022);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateupdateteEmployee')
+data.setCell(2, 2, 'com.nisum.poc.TestNG.EmployeeTest')
+data.setCell(2, 3, 888);
+window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
+return data;
+}
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -256,9 +262,16 @@
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.nisum.poc.TestNG.EmployeeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateGetEmployee</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_Suite" class="panel">
@@ -267,22 +280,30 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.nisum.poc.Employee.IncludeExcludeEmployee</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">createEmployee</span>
+              <div class="chronological-class-name">com.nisum.poc.TestNG.EmployeeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">deleteEmployee</span>
-                <span class="method-start">5277 ms</span>
+                <span class="method-name">validatecreateEmployee</span>
+                <span class="method-start">609 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">3960 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">retriveEmployee</span>
-                <span class="method-start">6128 ms</span>
+                <span class="method-name">validateupdateteEmployee</span>
+                <span class="method-start">3961 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">4849 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">updateEmployee</span>
-                <span class="method-start">6827 ms</span>
+                <span class="method-name">validateDeleteEmployee</span>
+                <span class="method-start">4852 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

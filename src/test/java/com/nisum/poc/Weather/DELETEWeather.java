@@ -1,45 +1,30 @@
 package com.nisum.poc.Weather;
 
-import io.restassured.http.Header;
-import io.restassured.http.Headers;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.ResponseBody;
-import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
 import io.restassured.response.Response;
-import java.io.IOException;
-import java.util.Properties;
+import io.restassured.response.ResponseBody;
+import org.json.JSONObject;
+import org.junit.Assert;
+
 import java.util.logging.Logger;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class DELETEWeather {
-    private static Logger log = Logger.getLogger(String.valueOf(DELETEWeather.class));
-    protected static Properties prop = null;
-    static {
-        try {
-            prop = PropertyClass.loader_properties();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private static Logger log = Logger.getLogger(String.valueOf(GETWeather.class));
 
-    }
+    public static void deleteWeather() {
+        Response response = RestAssured.given()
+                .when().queryParam("appid", "b8896959f2c926765dfbaefb02c3c260")
+                .contentType(ContentType.JSON)
+                .delete("/stations");
+        Assert.assertEquals("Did not get response", 404, response.getStatusCode());
+        log.info("Verified status code");
 
-    @Test
-    public void  updateWeather() throws IOException {
-        RestAssured.baseURI = prop.getProperty("URI");
-
-        Response response = null;
-
-        try {
-            response = RestAssured.given()
-                    .when().queryParam("appid", prop.getProperty("APP_ID"))
-                    .contentType(ContentType.JSON)
-                    .delete("/stations");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         int statusCode = response.getStatusCode();
         Headers allHeaders = response.headers();
         String statusLine = response.getStatusLine();
@@ -64,14 +49,14 @@ public class DELETEWeather {
         assertEquals(serverType /* actual value */, "openresty" /* expected value */);
         log.info("Verified serverType in Header");
 
-        JsonPath jsonPathEvaluator = response.jsonPath();
+        JSONObject JSONResponseBody = new JSONObject(response.asString());
 
         assertTrue(bodyAsString.toLowerCase().contains("code"), "Response body contains code");
         assertTrue(bodyAsString.contains("404000"), "Response body contains 404000");
-        log.info("code received from Response " + jsonPathEvaluator.get("code"));
+        log.info("code received from Response " + JSONResponseBody.get("code"));
 
         assertTrue(bodyAsString.toLowerCase().contains("message"), "Response body contains message");
         assertTrue(bodyAsString.contains("Internal error"), "Response body contains Internal error");
-        log.info("message received from Response " + jsonPathEvaluator.get("message"));
+        log.info("message received from Response " + JSONResponseBody.get("message"));
     }
 }

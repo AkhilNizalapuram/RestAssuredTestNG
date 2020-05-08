@@ -19,26 +19,28 @@ public class EmployeeTest {
             e.printStackTrace();
         }
     }
-    @BeforeMethod
+    @BeforeMethod(description = "Initializes URI",enabled = true)
     public void setUp(){
         RestAssured.baseURI = prop.getProperty("URI");
     }
 
-    @Test(priority=0)
+    @Test(description = "This method is used for validation of retriving weather details ",enabled = false,groups= {"Exclude Group"})
     public void validateGetEmployee() {
         GETEmployee.retriveemployee(1);
+
     }
 
-    @Test(priority=1)
+    @Test(description = "This method is used for validation of creating employee details ",priority=1,enabled = true,groups= {"Include Group"})
     public void validatecreateEmployee() {
         POSTEmployee.createemployee(1);
     }
 
-    @Test(priority=2)
+    @Test(description = "This method is used for validation of updating employee details ",priority=2,enabled = true,groups= {"Include Group"})
     public void validateupdateteEmployee() {
         PUTEmployee.updateEmployee(1);
     }
-    @Test(priority=3)
+
+    @Test(description = "This method is used for validation of deleting employee details ",priority=3,enabled = true,groups= {"Include Group"})
     public void validateDeleteEmployee() {
         DeleteEmployee.deleteEmployee(1);
 

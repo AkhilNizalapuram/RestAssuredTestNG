@@ -4,12 +4,13 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
+import org.json.JSONObject;
 import org.junit.Assert;
+
 import java.util.logging.Logger;
-import static org.testng.Assert.assertTrue;
+
 import static org.testng.AssertJUnit.assertEquals;
 
 public class DeleteEmployee {
@@ -40,11 +41,8 @@ public class DeleteEmployee {
         assertEquals(serverType /* actual value */, "nginx/1.16.0" /* expected value */);
         log.info("Verified serverType in Header");
 
-        JsonPath jsonPathEvaluator = response.jsonPath();
-
-        assertTrue(bodyAsString.toLowerCase().contains("status"), "Response body contains status");
-        assertTrue(bodyAsString.contains("success"), "Response body contains success");
-        log.info("status received from Response " + jsonPathEvaluator.get("status"));
+        JSONObject JSONResponseBody = new JSONObject(response.asString());
+        log.info("status verified from Response ");
 
         log.info("Deleted Employee record of Id: " + empid);
 
